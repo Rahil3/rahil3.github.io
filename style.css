@@ -1,50 +1,69 @@
-.sdiv{
-    display:none;
-}
-html{
-	height:100%;
-	width:100%;
-	max-width:100%;
-}
-.back {
-	width:100%;
-	height:100%;
-}
-.sa{
-	float:right;
-	    text-align:center;
-}
-.rsdrift{
-	width:96%;
-	max-width:985px;
-	position:relative;
-	top:45px;
-	}
-.android{
-	width:100%;
-	max-width:350px;
-	position:relative;
-	top:45px;
-	}
-.select{
-	float:left;
-    text-align:center;
-	display:block;
-}
-a:link, a:visited {
-    background-color: black;
-    color: white;
-    padding: 12px 23px;
-    text-align: center; 
-    text-decoration: none;
-    display: inline-block;
+body {
+ margin:0px;
+ padding:0px;
+ font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
-a:hover, a:active {
-    background-color: grey;
+#sidebar{
+	background:#151718;
+	width:200px;
+	height:100%;
+	display:block;
+	position:absolute;
+	left:-200px;
+	top:0px;
+	transition:left 0.3s linear;
 }
-body{
-	background-image:url(img/wall/images.jpg);
-	background-attachment:fixed;
-	background-size:cover;
+
+#sidebar.visible{
+	left:0px;
+	transition:left 0.3s linear;
+}
+
+ul {
+	margin:0px;
+	padding:0px;
+}
+
+ul li{
+	list-style:none;
+}
+
+ul li a{
+	color:white;
+	background:#1c1e1f;
+	color:#cc;
+	border-bottom:1px solid #111;
+	display:block;
+	width:180px;
+	padding:10px;
+	style:none;
+	text-decoration:none;
+}
+
+#sidebar-btn{
+	display:inline-block;
+	vertical-align:middle;
+	width:20px;
+	height:15px;
+	cursor:pointer;
+	margin:20px;
+	position:absolute;
+	top:0px;
+	right:-60px;
+}
+
+#sidebar-btn span{
+	height:2px;
+	background:#111;
+	margin-bottom:5px;
+	display:block;
+}
+
+#sidebar-btn span:nth-child(2){
+	width:75%;
+}
+
+#sidebar-btn span:nth-child(3){
+	width:50%;
 }
